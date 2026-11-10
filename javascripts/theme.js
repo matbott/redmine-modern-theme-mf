@@ -1258,12 +1258,24 @@
   }
 
   /* ---------- Resto ---------- */
+  /* Selected rows: sync the checkbox state of the issues table into the
+     <tr> class so the row paints like the hover/selected theme state. */
+  function initRowSelection() {
+    $(document).on('change', 'table.list tbody input[type="checkbox"]', function () {
+      var $tr = $(this).closest('tr');
+      if (this.checked) $tr.addClass('selected');
+      else $tr.removeClass('selected');
+    });
+  }
+
   function init() {
     if (!$('body').is('.controller-projects.action-show')) {
       console.log('Vistazo moderno: la pagina no coincide');
       return;
     }
     if ($('.vz-hero').length) return;
+
+    initRowSelection();
 
     safe('acento', function () {
       applyAccent(true);
