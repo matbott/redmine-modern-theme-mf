@@ -4302,11 +4302,9 @@ html.dark-mode #rdb-taskboard .rdb-group-header a[style]:hover {
 }
 
 /* Progreso */
-.rdb-card-progress,
-.rdb-compact-progress {
-  background-color: var(--c-border) !important;
-  margin: 0;
-  clear: both;
+.rdb-card-progress-bar, .rdb-compact-progress-bar {
+    background-color: var(--c-primary) !important;
+    height: 5px;
 }
 
 /* Submenu del taskboard */
