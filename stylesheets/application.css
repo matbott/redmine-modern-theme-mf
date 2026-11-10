@@ -1308,7 +1308,7 @@ html.dark-mode .rm-account-panel ul li a:hover { background: var(--c-primary-lig
 #sidebar ul li a {
   display: flex !important;
   align-items: center !important;
-  padding: var(--sp-2) var(--sp-2) !important;
+  padding: var(--sp-1) var(--sp-1) !important;
   font-size: var(--text-sm) !important;
   color: var(--c-text-muted) !important;
   border-radius: var(--r-sm) !important;
