@@ -1605,6 +1605,9 @@ html.dark-mode table.list tbody tr:hover { background: var(--c-primary-light) !i
 /* Selected issue rows */
 table.list tbody tr.selected { background: var(--c-primary-light) !important; }
 html.dark-mode table.list tbody tr.selected { background-image: linear-gradient(var(--c-primary-light), var(--c-primary-light)) !important; }
+/* Selected via checkbox: paint the row when its checkbox is checked (:has) */
+table.list tbody tr:has(input[type="checkbox"]:checked) { background: var(--c-primary-light) !important; }
+html.dark-mode table.list tbody tr:has(input[type="checkbox"]:checked) { background-image: linear-gradient(var(--c-primary-light), var(--c-primary-light)) !important; }
 
 table.list tbody td {
   padding: var(--sp-2) var(--sp-3) !important;
