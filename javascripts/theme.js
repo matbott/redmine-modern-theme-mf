@@ -1269,13 +1269,12 @@
   }
 
   function init() {
+    initRowSelection();
     if (!$('body').is('.controller-projects.action-show')) {
       console.log('Vistazo moderno: la pagina no coincide');
       return;
     }
     if ($('.vz-hero').length) return;
-
-    initRowSelection();
 
     safe('acento', function () {
       applyAccent(true);
