@@ -4511,3 +4511,16 @@ html.dark-mode table.list tbody tr.even:hover {
 html.dark-mode .rdb-compact {
   background: var(--c-surface) !important;
 }
+
+/* ── Pins toolbar (plugin) — token-based dark styling ── */
+.pins-toolbar {
+  margin-bottom: 1.5em;
+  padding: 15px;
+  background: linear-gradient(135deg, var(--c-primary) 0%, var(--c-bg) 100%) !important;
+  border: 1px solid var(--c-border-2) !important;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
