@@ -3923,6 +3923,11 @@ html.dark-mode #activity h3 {
   color: var(--c-text) !important;
 }
 
+/* Activity page — day separator: override core gray token (-2) with theme gray (-7) */
+div#activity dt {
+  border-block-start: 2px solid var(--oc-gray-7) !important;
+}
+
 /* ── Sidebar clear-query icon — ensure SVG renders ── */
 a.icon-clear-query .icon-svg { display: block !important; }
 a.icon-clear-query .icon-label { display: none !important; }
